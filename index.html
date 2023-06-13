@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Payment form</title>
+</head>
+<body>
+  <h1>Payment form</h1>
+  
+Required fields are marked by *
+<br><br>
+Contact information
+<br><br>
+    
+    <label>
+      <input type="radio" name="salutation" value="mx" checked>
+      Mx.
+    </label>
+    
+    <br>
+    
+    <label>
+      <input type="radio" name="salutation" value="mr">
+      Mr.
+    </label>
+    
+    <br>
+    
+    <label>
+      <input type="radio" name="salutation" value="ms">
+      Ms.
+    </label>
+    
+    <br>
+    
+    <label>
+      <input type="radio" name="salutation" value="mrs">
+      Mrs.
+    </label>
+    
+    <br><br>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br><br>
+    Payment information
+    <br><br>
+
+    
+        <select id="card-type" name="card-type">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+ 
+        
+        <label for="card-number">Card Number</label>
+        <br>
+        <input type="tel" id="card-number" name="card-number" placeholder="xxxx xxxx xxxx xxxx" required>
+        <br>
+        <label for="expiration-date">Expiration Date:</label>
+        <br>
+        <input type="text" id="expiration-date" name="expiration-date" required>
+        
+        <br><br>
+
+    <input type="submit" value="Submit Payment">
+  </form>
+</body>
+</html>
